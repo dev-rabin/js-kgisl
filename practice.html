@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="height" placeholder="Height">
+        <input type="number" id="base" placeholder="Base">
+        <button onclick="getArea()">Area of triangle</button>
+    </form>
+    <script>
+        function getArea() {
+            let height = document.getElementById("height").value;
+            let base = document.getElementById("base").value;
+            let area = 0.5*base*height;
+            console.log(area);
+            alert('The area of triangle is ' + area);
+        }
+    </script>
+</body>
+</html>
